@@ -1,25 +1,8 @@
-#
-#
-# def strcounter(s):
-#     for sym in set(s):
-#         counter = 0
-#         for sub_sym in s:
-#             if sym == sub_sym:
-#                 counter += 1
-#         print(sym, counter)
-#
-# s = 'aaabc'
-# strcounter(s)
 
 
-def strcounter(s):
-    syms_counter = {}
-    for sym in s:
-        syms_counter[sym] = syms_counter.get(sym, 0) + 1
-
-    print(syms_counter)
-    print('hello')
-strcounter('aaabca')
+s = input()
+h = len(s) // 2
+print(s[:h] == s[:len(s)-h-1:-1])
 
 
 
